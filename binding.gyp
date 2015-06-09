@@ -19,7 +19,6 @@
                 "qubit.c",
                 "hefty1.c",
                 "shavite3.c",
-                "cryptonight.c",
                 "x13.c",
                 "x14.c",
                 "boolberry.cc",
@@ -62,7 +61,7 @@
                 "crypto",
             ],
             "cflags": [
-                "-D_GNU_SOURCE -maes -fPIC -Ofast -flto -fuse-linker-plugin -funroll-loops -funswitch-loops -fpeel-loops"
+                "-D_GNU_SOURCE -fPIC -Ofast -flto -fuse-linker-plugin -funroll-loops -funswitch-loops -fpeel-loops"
             ],
             "cflags!": [ 
                 "-O2", "-fno-strict-aliasing", "-fno-tree-vrp", "-fno-omit-frame-pointer"
@@ -71,7 +70,7 @@
                 "-fPIC -Ofast -flto -fuse-linker-plugin"
             ],
             "cflags_cc": [
-                "-std=c++0x -maes -march=native"
+                "-std=c++0x"
             ]
         }
     ]
